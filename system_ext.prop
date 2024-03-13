@@ -11,6 +11,7 @@ sys.brightness.disable_gamma_conversion=true
 dalvik.vm.dex2oat64.enabled=true
 
 # Display
+debug.sf.defer_refresh_rate_when_off=1
 debug.sf.enable_hwc_vds=1
 
 # CNE
