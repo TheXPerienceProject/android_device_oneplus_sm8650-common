@@ -418,6 +418,7 @@ PRODUCT_PACKAGES += \
     OPlusFrameworksResCommon \
     OPlusSettingsResCommon \
     OPlusSystemUIResCommon \
+    TetheringResGeneric \
     WifiResTarget
 
 # Partitions
