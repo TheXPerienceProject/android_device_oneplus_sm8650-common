@@ -38,4 +38,8 @@
 
     <!-- Slider vibrations fallbacks - set to true to vary amplitude in addition to duration -->
     <bool name="config_sliderVibFallbackWaveform">true</bool>
+
+    <!-- Whether device has physical tri state switch -->
+    <bool name="config_hasAlertSlider">true</bool>
+
 </resources>
