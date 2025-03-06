@@ -31,6 +31,15 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := lz4
 
+# Alert slider
+PRODUCT_PACKAGES += \
+    KeyHandler \
+    tri-state-key-calibrate
+
+#aperture
+PRODUCT_PACKAGES += \
+    Aperture
+
 # Audio
 SOONG_CONFIG_NAMESPACES += android_hardware_audio
 SOONG_CONFIG_android_hardware_audio += \
