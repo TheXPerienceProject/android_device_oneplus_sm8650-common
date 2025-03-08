@@ -210,7 +210,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    vendor.oplus.hardware.commondcs-service \
+    vendor.oplus.hardware.commondcs-service
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
@@ -280,6 +280,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    fstab.qcom.vendor_ramdisk \
     init.class_main.sh \
     init.oplus.rc \
     init.kernel.post_boot.sh \
@@ -326,7 +327,21 @@ SPAMMY_LOG_TAGS := \
     synaLib \
     CwbService \
     occe_create \
-    DisplayModeController
+    DisplayModeController \
+    ForegroundUtils \
+    BaseDepthController \
+    GraphicsEnvironment \
+    Diag_Lib \
+    AGM \
+    AHAL \
+    MediaStrategy \
+    PAL_ResourceManager \
+    CCodec \
+    CCodecBuffers \
+    CCodecConfig \
+    Codec2Client \
+    tftp_server \
+    COMU
 
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 PRODUCT_VENDOR_PROPERTIES += \
