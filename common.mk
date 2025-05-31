@@ -454,6 +454,10 @@ PRODUCT_PACKAGES += \
 # QCOM
 TARGET_BOARD_PLATFORM := pineapple
 
+# QSPA
+PRODUCT_PACKAGES += \
+    vendor.qti.qspa-service
+
 # QTI fwk-detect
 PRODUCT_PACKAGES += \
     libcurl.vendor \
