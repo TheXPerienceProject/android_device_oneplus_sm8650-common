@@ -58,10 +58,10 @@
     <string name="config_dozeUdfpsLongPressSensorType" translatable="false">org.lineageos.sensor.udfps</string>
 
     <!-- Type of the double tap sensor. Empty if double tap is not supported. -->
-    <string name="config_dozeDoubleTapSensorType" translatable="false">org.yaap.sensor.double_tap</string>
+    <string name="config_dozeDoubleTapSensorType" translatable="false">mx.xperience.sensor.double_tap</string>
 
     <!-- Type of the tap sensor. Empty if tap is not supported. -->
-    <string name="config_dozeTapSensorType" translatable="false">org.yaap.sensor.tap</string>
+    <string name="config_dozeTapSensorType" translatable="false">mx.xperience.sensor.tap</string>
 
     <!-- Flag specifying whether WFC over IMS should be available for carrier: independent of
          carrier provisioning. If false: hard disabled. If true: then depends on carrier
