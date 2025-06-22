@@ -101,6 +101,18 @@
       "ResetOnInit": true
     },
     {
+      "Name": "UclampBGMax",
+      "Path": "/dev/cpuctl/background/cpu.uclamp.max",
+      "Values": ["60"],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "UclampSysBGMax",
+      "Path": "/dev/cpuctl/system-background/cpu.uclamp.max",
+      "Values": ["70"],
+      "ResetOnInit": true
+    },
+    {
       "Name": "GPUMinFreq",
       "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/min_freq",
       "Values": [
