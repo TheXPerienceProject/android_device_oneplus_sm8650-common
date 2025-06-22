@@ -105,6 +105,12 @@ on post-fs-data
     # Enable WLAN cold boot calibration
     write /sys/kernel/cnss/fs_ready 1
 
+    # Reconfigure cpuset on post-fs
+    write /dev/cpuset/background/cpus 0-3
+    write /dev/cpuset/system-background/cpus 0-3
+    write /dev/cpuset/foreground/cpus 0-6
+    write /dev/cpuset/foreground/boost/cpus 0-4
+
 on early-boot
     verity_update_state
 

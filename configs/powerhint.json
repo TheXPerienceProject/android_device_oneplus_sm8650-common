@@ -1,6 +1,118 @@
 {
   "Nodes": [
     {
+      "Name": "CPULittleClusterMaxFreq",
+      "Path": "/sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq",
+      "Values": [
+        "1248000",
+        "1689600",
+        "9999999"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPULittleClusterMinFreq",
+      "Path": "/sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq",
+      "Values": [
+        "1689600",
+        "1344000",
+        "787200",
+        "364800"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUBigClusterMaxFreq",
+      "Path": "/sys/devices/system/cpu/cpufreq/policy2/scaling_max_freq",
+      "Values": [
+        "1075200",
+        "1286400",
+        "9999999"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "PMQoSCpuDmaLatency",
+      "Path": "/dev/cpu_dma_latency",
+      "Values": [
+        "44",
+        "1000"
+      ],
+      "HoldFd": true
+    },
+    {
+      "Name": "CPUBigClusterMinFreq",
+      "Path": "/sys/devices/system/cpu/cpufreq/policy2/scaling_min_freq",
+      "Values": [
+        "2246400",
+        "1401600",
+        "614400",
+        "499200"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUBigPlusClusterMaxFreq",
+      "Path": "/sys/devices/system/cpu/cpufreq/policy5/scaling_max_freq",
+      "Values": [
+        "1401600",
+        "9999999"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUBigPlusClusterMinFreq",
+      "Path": "/sys/devices/system/cpu/cpufreq/policy5/scaling_min_freq",
+      "Values": [
+        "1612800",
+        "1286400",
+        "499200"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "UclampTAMin",
+      "Path": "/dev/cpuctl/top-app/cpu.uclamp.min",
+      "Values": [
+        "0",
+        "40",
+        "60"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
+      "Name": "UclampTALatency",
+      "Path": "/dev/cpuctl/top-app/cpu.uclamp.latency_sensitive",
+      "Values": [
+        "1",
+        "0"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "UclampFGMin",
+      "Path": "/dev/cpuctl/foreground/cpu.uclamp.min",
+      "Values": [
+        "0",
+        "30"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
+      "Name": "UclampBGMax",
+      "Path": "/dev/cpuctl/background/cpu.uclamp.max",
+      "Values": ["60"],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "UclampSysBGMax",
+      "Path": "/dev/cpuctl/system-background/cpu.uclamp.max",
+      "Values": ["70"],
+      "ResetOnInit": true
+    },
+    {
       "Name": "GPUMinFreq",
       "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/min_freq",
       "Values": [
