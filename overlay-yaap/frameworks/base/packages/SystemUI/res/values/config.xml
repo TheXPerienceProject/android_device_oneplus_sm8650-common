@@ -8,9 +8,6 @@
     <!-- Color of the UDFPS Pressed view -->
     <color name="config_udfpsColor">#ffffe6</color>
 
-    <!-- Burn-in protection -->
-    <integer name="config_shift_interval">40</integer>
-
     <!-- Whether key handler sends intent when changing slider position -->
     <string name="config_alertSliderIntent">org.lineageos.settings.device.UPDATE_SLIDER</string>
 
