@@ -216,7 +216,6 @@ vendor/lib64/libbluetooth_audio_session_qti_2_1.so
 vendor/lib64/libbt-hidlclient.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
-vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # Camera(Full res modded)
 odm/lib64/camera/com.qti.sensormodule.qtech_imx581.bin|3d29498a2bd9082ece52337e52fac056f62982af
