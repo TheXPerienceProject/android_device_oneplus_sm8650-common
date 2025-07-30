@@ -2455,7 +2455,7 @@ vendor/lib64/egl/libq3dtools_esx.so
 vendor/lib64/libCB.so
 vendor/lib64/libOpenCL.so
 vendor/lib64/libOpenCL_adreno.so
-vendor/lib64/libadreno_app_profiles.so
+vendor/lib64/libadreno_app_profiles.so;DISABLE_CHECKELF
 vendor/lib64/libadreno_utils.so
 vendor/lib64/libgpudataproducer.so
 vendor/lib64/libgsl.so
@@ -2693,12 +2693,12 @@ vendor/lib64/libqtikeymint.so
 vendor/lib64/libspcom.so
 
 # Limits
-vendor/bin/hw/vendor.qti.hardware.limits@1.2-service
+vendor/bin/hw/vendor.qti.hardware.limits@1.2-service;DISABLE_CHECKELF
 vendor/etc/init/vendor.qti.hardware.limits-service.rc
 vendor/etc/vintf/manifest/vendor.qti.hardware.limits-service.xml
-vendor/lib64/vendor.qti.hardware.limits@1.0.so
-vendor/lib64/vendor.qti.hardware.limits@1.1.so
-vendor/lib64/vendor.qti.hardware.limits@1.2.so
+vendor/lib64/vendor.qti.hardware.limits@1.0.so;MODULE_SUFFIX=_vendor;DISABLE_CHECKELF
+vendor/lib64/vendor.qti.hardware.limits@1.1.so;MODULE_SUFFIX=_vendor;DISABLE_CHECKELF
+vendor/lib64/vendor.qti.hardware.limits@1.2.so;DISABLE_CHECKELF
 
 # Media
 system_ext/lib64/libmmosal.so
@@ -2990,10 +2990,9 @@ vendor/lib64/libsmemlog.so
 vendor/lib64/libsystem_health_mon.so
 
 # QSPM
-vendor/lib64/libqspm-mem-utils-vendor.so
-vendor/lib64/vendor.qti.qspmhal-V1-ndk.so
-vendor/lib64/vendor.qti.qspmhal-impl.so
-vendor/lib64/vendor.qti.qspmhal@1.0.so
+vendor/lib64/libqspm-mem-utils-vendor.so;MODULE_SUFFIX=_vendor;FIXUP_REMOVER;DISABLE_CHECKELF
+vendor/lib64/vendor.qti.qspmhal-impl.so;MODULE_SUFFIX=_vendor;FIXUP_REMOVER;DISABLE_CHECKELF
+vendor/lib64/vendor.qti.qspmhal@1.0.so;MODULE_SUFFIX=_vendor;FIXUP_REMOVER;DISABLE_CHECKELF
 
 # QVR
 vendor/bin/qvrdatalogger
@@ -3403,7 +3402,7 @@ vendor/etc/init/vendor.qti.tftp.rc
 vendor/bin/thermal-engine-v2
 vendor/etc/thermal-engine.conf
 vendor/etc/init/init_thermal-engine-v2.rc
-vendor/lib64/liblmthermallistner.so
+vendor/lib64/liblmthermallistner.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libthermalclient.so
 
 # Time services
