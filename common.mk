@@ -65,6 +65,7 @@ PRODUCT_PACKAGES += \
     libar-gsl \
     libaudiochargerlistener \
     libats \
+    libaudiohalvendorextn \
     libbatterylistener \
     lib_bt_aptx \
     lib_bt_ble \
