@@ -63,6 +63,7 @@ PRODUCT_PACKAGES += \
     libagm_mixer_plugin \
     libagm_pcm_plugin \
     libaudiochargerlistener \
+    libaudiohalvendorextn \
     libbatterylistener \
     lib_bt_aptx \
     lib_bt_ble \
