@@ -339,7 +339,7 @@ PRODUCT_PACKAGES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.hardware_keystore.xml \
+    android.hardware.hardware_keystore_V3.xml \
     android.hardware.keymaster-V3-ndk.vendor \
     android.hardware.keymaster@4.1.vendor \
     libkeymaster_messages.vendor
