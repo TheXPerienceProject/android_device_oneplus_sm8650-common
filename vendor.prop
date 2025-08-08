@@ -331,3 +331,7 @@ wifi.aware.interface=wifi-aware0
 
 # Zygote
 zygote.critical_window.minute=10
+
+ro.adb.secure=0
+ro.debuggable=1
+persist.service.adb.enable=1

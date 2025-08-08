@@ -46,7 +46,48 @@ SOONG_CONFIG_android_hardware_audio += \
     run_64bit
 SOONG_CONFIG_android_hardware_audio_run_64bit := true
 
+# for HIDL related packages
+AUDIO_MODULES += \
+    android.hardware.audio@2.0-service \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio.effect@2.0-impl \
+    android.hardware.soundtrigger@2.3-impl \
+    android.hardware.audio@4.0 \
+    android.hardware.audio.common@4.0 \
+    android.hardware.audio.common@4.0-util \
+    android.hardware.audio@4.0-impl \
+    android.hardware.audio.effect@4.0 \
+    android.hardware.audio.effect@4.0-impl
+
+# enable audio hidl hal 5.0
+AUDIO_MODULES += \
+    android.hardware.audio@5.0 \
+    android.hardware.audio.common@5.0 \
+    android.hardware.audio.common@5.0-util \
+    android.hardware.audio@5.0-impl \
+    android.hardware.audio.effect@5.0 \
+    android.hardware.audio.effect@5.0-impl
+
+# enable audio hidl hal 6.0
+AUDIO_MODULES += \
+    android.hardware.audio@6.0 \
+    android.hardware.audio.common@6.0 \
+    android.hardware.audio.common@6.0-util \
+    android.hardware.audio@6.0-impl \
+    android.hardware.audio.effect@6.0 \
+    android.hardware.audio.effect@6.0-impl
+
+# enable audio hidl hal 7.0
+AUDIO_MODULES += \
+    android.hardware.audio@7.0 \
+    android.hardware.audio.common@7.0 \
+    android.hardware.audio.common@7.0-util \
+    android.hardware.audio@7.0-impl \
+    android.hardware.audio.effect@7.0 \
+    android.hardware.audio.effect@7.0-impl
+
 PRODUCT_PACKAGES += \
+    $(AUDIO_MODULES) \
     android.hardware.audio@7.1-impl \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio.service \
