@@ -278,6 +278,10 @@ PRODUCT_PACKAGES += \
     android.hardware.health@1.0.vendor \
     android.hardware.health@2.1.vendor
 
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
+
 # HIDL
 PRODUCT_PACKAGES += \
     libhidltransport.vendor \
