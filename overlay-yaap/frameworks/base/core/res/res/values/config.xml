@@ -45,4 +45,6 @@
     <!-- Whether device has physical tri state switch -->
     <bool name="config_hasAlertSlider">true</bool>
 
+    <!-- Absolute path of the DC dimming node -->
+    <string name="config_dcdNodePath">/sys/kernel/oplus_dc_dim/dc_dim_enable</string>
 </resources>
