@@ -9,6 +9,9 @@ on fs
     write /proc/touchpanel/tp_fw_update 0
 
 on boot
+    # Charger
+    chown system system /dev/oplus_chg
+
     # Display
     chown system system /dev/oplus_display
     chown system system /sys/kernel/oplus_display/dimlayer_bl_en
