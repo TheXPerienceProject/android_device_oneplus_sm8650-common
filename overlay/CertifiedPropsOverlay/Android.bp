@@ -1,0 +1,5 @@
+runtime_resource_overlay {
+    name: "CertifiedOplusPropsOverlay",
+    system_ext_specific: true,
+    overrides: ["CertifiedPropsOverlay"],
+}
