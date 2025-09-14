@@ -108,7 +108,7 @@ BOARD_BOOTCONFIG := \
     androidboot.console=0
 #    androidboot.selinux=permissive
 
-TARGET_KERNEL_CLANG_VERSION := 21
+TARGET_KERNEL_CLANG_VERSION := 22
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_LLVM_BINUTILS := true
 TARGET_KERNEL_NO_GCC := false
