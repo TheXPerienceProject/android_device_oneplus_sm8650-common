@@ -246,6 +246,11 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor \
     libgatekeeper.vendor
 
+# GameBar
+PRODUCT_PACKAGES += \
+    GameBar
+
+
 # GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps.conf:$(TARGET_COPY_OUT_ODM)/etc/gps.conf
@@ -304,6 +309,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.ir-service.oplus \
     consumerir.default
+
+# IR - Oplus fwk
+$(call inherit-product, hardware/oplus/oplus-fwk/oplus-fwk.mk)
 
 # Init
 PRODUCT_COPY_FILES += \
