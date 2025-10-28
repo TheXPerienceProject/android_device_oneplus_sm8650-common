@@ -218,6 +218,7 @@ VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 # SEPolicy
 include hardware/oplus/sepolicy/qti/SEPolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
+include packages/apps/GameBar/sepolicy/SEPolicy.mk
 
 # Touch
 SOONG_CONFIG_NAMESPACES += OPLUS_LINEAGE_TOUCH_HAL

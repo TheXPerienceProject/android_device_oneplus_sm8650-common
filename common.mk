@@ -247,7 +247,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     GameBar
 
-
 # GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps.conf:$(TARGET_COPY_OUT_ODM)/etc/gps.conf
