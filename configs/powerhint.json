@@ -13,6 +13,22 @@
       "ResetOnInit": true
     },
     {
+      "Name": "UclampFgVideoMin",
+      "Path": "/dev/cpuctl/foreground/cpu.uclamp.min",
+      "Values": ["5", "0"]
+    },
+    {
+      "Name": "UclampFgVideoMax",
+      "Path": "/dev/cpuctl/foreground/cpu.uclamp.max",
+      "Values": ["45", "80"]
+    },
+    {
+      "Name": "LatencyFgVideo",
+      "Path": "/dev/cpuctl/foreground/cpu.uclamp.latency_sensitive",
+      "Values": ["0", "1"]
+    },
+
+    {
       "Name": "PowerHALRenderingState",
       "Path": "vendor.powerhal.rendering",
       "Values": [
@@ -28,6 +44,30 @@
       "Node": "PowerHALRenderingState",
       "Duration": 0,
       "Value": "EXPENSIVE_RENDERING"
+    },
+    {
+      "PowerHint": "VIDEO_DECODE",
+      "Node": "UclampFgVideoMin",
+      "Duration": 0,
+      "Value": "5"
+    },
+    {
+      "PowerHint": "VIDEO_DECODE",
+      "Node": "UclampFgVideoMax",
+      "Duration": 0,
+      "Value": "45"
+    },
+    {
+      "PowerHint": "VIDEO_DECODE",
+      "Node": "LatencyFgVideo",
+      "Duration": 0,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "VIDEO_DECODE",
+      "Node": "PowerHALRenderingState",
+      "Duration": 0,
+      "Value": ""
     }
   ]
 }
