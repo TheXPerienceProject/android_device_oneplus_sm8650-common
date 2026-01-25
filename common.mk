@@ -25,9 +25,16 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_vendor=erofs \
     POSTINSTALL_OPTIONAL_vendor=true
 
+AB_OTA_POSTINSTALL_CONFIG += \
+    RUN_POSTINSTALL_odm=true \
+    POSTINSTALL_PATH_odm=bin/xbl_config_arb_check \
+    FILESYSTEM_TYPE_odm=erofs \
+    POSTINSTALL_OPTIONAL_odm=false
+
 PRODUCT_PACKAGES += \
     checkpoint_gc \
-    otapreopt_script
+    otapreopt_script \
+    xbl_config_arb_check
 
 PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := lz4
 
@@ -580,9 +587,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel \
     hardware/xperience/interfaces/power-libperfmgr \
     hardware/oplus \
-    hardware/qcom-caf/common/libqti-perfd-client \
-    kernel/oneplus/sm8650 \
-    kernel/oneplus/sm8650-modules
+    hardware/qcom-caf/common/libqti-perfd-client
 
 # Storage
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
