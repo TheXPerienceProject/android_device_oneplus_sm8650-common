@@ -82,8 +82,7 @@ TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     hardware/oplus/vintf/device_framework_matrix.xml \
-    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
-    vendor/xperience/interfaces/vendor_framework_compatibility_matrix.xml
+    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
 DEVICE_FRAMEWORK_MANIFEST_FILE += $(COMMON_PATH)/framework_manifest.xml
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := \
@@ -108,11 +107,12 @@ BOARD_BOOTCONFIG := \
     androidboot.console=0
 #    androidboot.selinux=permissive
 
-TARGET_KERNEL_CLANG_VERSION := 22
+#TARGET_KERNEL_CLANG_VERSION := r547379
+TARGET_KERNEL_CLANG_VERSION := 23
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_LLVM_BINUTILS := true
 TARGET_KERNEL_NO_GCC := false
-TARGET_KERNEL_ADDITIONAL_FLAGS := TARGET_PRODUCT=$(PRODUCT_DEVICE) KCFLAGS="-fno-stack-protector -Wno-default-const-init-field-unsafe"
+TARGET_KERNEL_ADDITIONAL_FLAGS := TARGET_PRODUCT=$(PRODUCT_DEVICE) KCFLAGS="-fno-stack-protector -Wno-default-const-init-field-unsafe -Wno-incompatible-pointer-types-discards-qualifiers"
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
