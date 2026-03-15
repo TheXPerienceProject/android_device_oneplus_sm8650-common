@@ -569,6 +569,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel \
     hardware/xperience/interfaces/power-libperfmgr \
     hardware/oplus \
+    kernel/oneplus/sm8650-modules/ \
     hardware/qcom-caf/common/libqti-perfd-client
 
 # Storage
@@ -615,7 +616,7 @@ $(call soong_config_set,qti_thermal,netlink,true)
 # Touch
 PRODUCT_PACKAGES += \
     TouchGestures \
-    vendor.lineage.touch@1.0-service.oplus
+    vendor.lineage.touch-service.oplus
 
 $(call soong_config_set,OPLUS_LINEAGE_TOUCH_HAL,INCLUDE_DIR,$(LOCAL_PATH)/touch/include)
 
