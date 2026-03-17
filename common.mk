@@ -149,6 +149,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    Aperture \
     android.frameworks.stats-V1-ndk.vendor \
     android.hardware.camera.common-V1-ndk.vendor \
     android.hardware.camera.device-V2-ndk.vendor \
