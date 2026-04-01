@@ -671,9 +671,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
 
-#Viper4Android
-$(call inherit-product, packages/apps/Viper4AndroidFx/config.mk)
-
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
