@@ -67,7 +67,7 @@ BOARD_USES_QCOM_MERGE_DTBS_SCRIPT := true
 TARGET_NEEDS_DTBOIMAGE := true
 
 # Camera
-TARGET_CAMERA_PACKAGE_NAME := com.oplus.camera
+TARGET_CAMERA_PACKAGE_NAME := com.oplus.packageName
 
 # Display
 TARGET_USES_DRM_PP := true
