@@ -1,106 +1,6 @@
 {
   "Nodes": [
     {
-      "Name": "CPULittleClusterMaxFreq",
-      "Path": "/sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq",
-      "Values": [
-        "1248000",
-        "1689600",
-        "9999999"
-      ],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "CPULittleClusterMinFreq",
-      "Path": "/sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq",
-      "Values": [
-        "1689600",
-        "1344000",
-        "787200",
-        "364800"
-      ],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "CPUBigClusterMaxFreq",
-      "Path": "/sys/devices/system/cpu/cpufreq/policy2/scaling_max_freq",
-      "Values": [
-        "1075200",
-        "1286400",
-        "9999999"
-      ],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "PMQoSCpuDmaLatency",
-      "Path": "/dev/cpu_dma_latency",
-      "Values": [
-        "44",
-        "1000"
-      ],
-      "HoldFd": true
-    },
-    {
-      "Name": "CPUBigClusterMinFreq",
-      "Path": "/sys/devices/system/cpu/cpufreq/policy2/scaling_min_freq",
-      "Values": [
-        "2246400",
-        "1401600",
-        "614400",
-        "499200"
-      ],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "CPUBigPlusClusterMaxFreq",
-      "Path": "/sys/devices/system/cpu/cpufreq/policy5/scaling_max_freq",
-      "Values": [
-        "1401600",
-        "9999999"
-      ],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "CPUBigPlusClusterMinFreq",
-      "Path": "/sys/devices/system/cpu/cpufreq/policy5/scaling_min_freq",
-      "Values": [
-        "1612800",
-        "1286400",
-        "499200"
-      ],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "UclampTAMin",
-      "Path": "/dev/cpuctl/top-app/cpu.uclamp.min",
-      "Values": [
-        "0",
-        "40",
-        "60"
-      ],
-      "DefaultIndex": 0,
-      "ResetOnInit": true
-    },
-    {
-      "Name": "UclampTALatency",
-      "Path": "/dev/cpuctl/top-app/cpu.uclamp.latency_sensitive",
-      "Values": [
-        "1",
-        "0"
-      ],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "UclampFGMin",
-      "Path": "/dev/cpuctl/foreground/cpu.uclamp.min",
-      "Values": [
-        "0",
-        "30"
-      ],
-      "DefaultIndex": 0,
-      "ResetOnInit": true
-    },
-    {
       "Name": "UclampBGMax",
       "Path": "/dev/cpuctl/background/cpu.uclamp.max",
       "Values": ["60"],
@@ -121,22 +21,6 @@
       ],
       "ResetOnInit": true
     },
-    {
-      "Name": "UclampFgVideoMin",
-      "Path": "/dev/cpuctl/foreground/cpu.uclamp.min",
-      "Values": ["5", "0"]
-    },
-    {
-      "Name": "UclampFgVideoMax",
-      "Path": "/dev/cpuctl/foreground/cpu.uclamp.max",
-      "Values": ["45", "80"]
-    },
-    {
-      "Name": "LatencyFgVideo",
-      "Path": "/dev/cpuctl/foreground/cpu.uclamp.latency_sensitive",
-      "Values": ["0", "1"]
-    },
-
     {
       "Name": "PowerHALRenderingState",
       "Path": "vendor.powerhal.rendering",
@@ -159,30 +43,6 @@
       "Node": "GPUMinFreq",
       "Duration": 0,
       "Value": "422000000"
-    },
-    {
-      "PowerHint": "VIDEO_DECODE",
-      "Node": "UclampFgVideoMin",
-      "Duration": 0,
-      "Value": "5"
-    },
-    {
-      "PowerHint": "VIDEO_DECODE",
-      "Node": "UclampFgVideoMax",
-      "Duration": 0,
-      "Value": "45"
-    },
-    {
-      "PowerHint": "VIDEO_DECODE",
-      "Node": "LatencyFgVideo",
-      "Duration": 0,
-      "Value": "0"
-    },
-    {
-      "PowerHint": "VIDEO_DECODE",
-      "Node": "PowerHALRenderingState",
-      "Duration": 0,
-      "Value": ""
     }
   ]
 }
