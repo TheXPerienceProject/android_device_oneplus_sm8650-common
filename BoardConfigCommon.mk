@@ -106,12 +106,8 @@ BOARD_BOOTCONFIG := \
     androidboot.console=0
 #    androidboot.selinux=permissive
 
-#TARGET_KERNEL_CLANG_VERSION := r547379
-TARGET_KERNEL_CLANG_VERSION := 23
-TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_LLVM_BINUTILS := true
-TARGET_KERNEL_NO_GCC := false
-TARGET_KERNEL_ADDITIONAL_FLAGS := TARGET_PRODUCT=$(PRODUCT_DEVICE) KCFLAGS="-fno-stack-protector -Wno-default-const-init-field-unsafe -Wno-incompatible-pointer-types-discards-qualifiers"
+TARGET_KERNEL_CLANG_VERSION := r563880c
+
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
@@ -122,6 +118,7 @@ TARGET_KERNEL_CONFIG := \
     gki_defconfig \
     vendor/pineapple_GKI.config \
     vendor/oplus/pineapple_GKI.config
+
 
 # Kernel modules
 BOARD_SYSTEM_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load.system_dlkm))
