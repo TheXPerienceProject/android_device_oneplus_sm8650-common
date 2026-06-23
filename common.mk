@@ -607,8 +607,8 @@ PRODUCT_SHIPPING_API_LEVEL := $(BOARD_SHIPPING_API_LEVEL)
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
-    hardware/google/pixel \
     hardware/xperience/interfaces/power-libperfmgr \
+    hardware/google/pixel/power-libperfmgr \
     hardware/oplus \
     kernel/oneplus/sm8650-modules/ \
     hardware/qcom-caf/common/libqti-perfd-client
