@@ -36,4 +36,6 @@
     <!-- Whether device has physical tri state switch -->
     <bool name="config_hasAlertSlider">true</bool>
 
+    <!-- Boost Framework -->
+    <bool name="config_supportsBoostFramework">true</bool>
 </resources>
