@@ -15,7 +15,7 @@ ANDROID_ROOT="${MY_DIR}/../../.."
 
 export TARGET_ENABLE_CHECKELF=true
 
-HELPER="${ANDROID_ROOT}/tools/extract-utils/extract_utils.sh"
+HELPER="${ANDROID_ROOT}/tools/extract-utils-yaap/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
     exit 1
@@ -131,7 +131,17 @@ function blob_fixup() {
        |odm/lib64/libdisplayfossfeature_nature.so \
        |vendor/bin/qvrdatauploader \
        |odm/bin/hw/vendor-oplus-hardware-touch-V2-service \
-       |odm/bin/touchDaemon)
+       |odm/bin/touchDaemon \
+       |vendor/lib64/libvideooptfeature.so \
+       |vendor/lib64/libgamepoweroptfeature.so \
+       |vendor/lib64/libpowercore.so \
+       |vendor/lib64/liboffscreenpoweroptfeature.so \
+       |vendor/lib64/libpsmoptfeature.so \
+       |vendor/lib64/libstandbyfeature.so \
+       |vendor/lib64/liblearningmodule.so \
+       |vendor/lib64/libaodoptfeature.so \
+       |vendor/lib64/libapengine.so \
+       |vendor/bin/poweropt-service)
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libtinyxml2.so" "libtinyxml2_stock.so" "${2}"
             ;;

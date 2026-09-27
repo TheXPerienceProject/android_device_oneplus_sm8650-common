@@ -917,6 +917,7 @@ vendor/lib64/libskewknob.so
 vendor/lib64/libsplh.so
 vendor/lib64/libsrc_jni_getPasrService.so
 vendor/lib64/libstandbyfeature.so
+vendor/lib64/libvideooptfeature.so
 vendor/lib64/vendor.qti.hardware.iop@1.0.so
 vendor/lib64/vendor.qti.hardware.iop@2.0.so
 vendor/lib64/vendor.qti.hardware.perf2-V1-ndk.so
@@ -1438,6 +1439,10 @@ vendor/lib64/libthreadutils.so
 vendor/bin/tftp_server
 vendor/etc/init/vendor.qti.tftp.rc
 
+# Thermal engine
+vendor/lib64/liblmthermallistner.so
+vendor/lib64/libthermalclient.so
+
 # Time services
 vendor/app/TimeService/TimeService.apk;NODEXPO
 vendor/bin/time_daemon
@@ -1496,7 +1501,7 @@ vendor/lib64/libubwcp.so
 # Widevine DRM
 vendor/apex/com.google.android.widevine.nonupdatable.apex
 vendor/etc/oplus_Widevine_licenses.pfm
-vendor/lib64/liboemcrypto.so
+#vendor/lib64/liboemcrypto.so
 
 # WiFi
 odm/bin/init.oplus.wifi.sh
