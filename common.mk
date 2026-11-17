@@ -619,7 +619,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel \
     hardware/xperience/interfaces/power-libperfmgr \
     hardware/oplus \
-    kernel/oneplus/sm8650-modules/
+    kernel/oneplus/sm8650-modules/ \
+    vendor/oneplus/sm8650-oss/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff
 
 # Storage
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
@@ -673,7 +674,7 @@ PRODUCT_PACKAGES += \
     vendor.lineage.touch-service.oplus
 
 $(call soong_config_set,OPLUS_LINEAGE_TOUCH_HAL,INCLUDE_DIR,$(LOCAL_PATH)/touch/include)
-$(call soong_config_set_bool,OPLUS_LINEAGE_TOUCH_HAL,USE_OPLUSTOUCH,true)
+$(call soong_config_set_bool,OPLUS_LINEAGE_TOUCH_HAL,USE_OPLUSTOUCH,false)
 
 # Trusted User Interface
 PRODUCT_PACKAGES += \
