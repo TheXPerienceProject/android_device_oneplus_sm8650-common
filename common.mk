@@ -55,7 +55,7 @@ SOONG_CONFIG_android_hardware_audio_run_64bit := true
 $(call soong_config_set,qtiaudio,pal_prefer_master_gain,true)
 $(call soong_config_set,qtiaudio,target_uses_oplus_speaker_protection,true)
 $(call soong_config_set,qtiaudio,feature_agm_hidl,true)
-$(call soong_config_set,qtiaudio,feature_lsm_hidl,true)
+$(call soong_config_set,qtiaudio,feature_lsm_hidl,false)
 $(call soong_config_set,qtiaudio,feature_pal_hidl,true)
 
 PRODUCT_PACKAGES += \
